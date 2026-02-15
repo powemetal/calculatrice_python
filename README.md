@@ -7,7 +7,33 @@ Une simple calculatrice Python créée comme exercice de pratique et de révisio
 L’objectif principal était de renforcer ma compréhension de l’utilisation des classes dans un projet modulaire, extensible et maintenable. Ce projet vise également à démontrer une architecture propre, une séparation claire des responsabilités et une couverture complète des tests unitaires — le tout en partant de zéro.
 
 ---
+## Objectifs pédagogiques
 
+
+---
+## Choix techniques
+
+### Séparation des classes
+
+J’ai choisi de séparer les classes en fonction de leurs responsabilités afin de respecter le principe de responsabilité unique (Single Responsibility Principle).
+
+Chaque composant a un rôle précis :
+- `Operations` pour la logique mathématique
+- `Memoires` pour stocker et gérer les valeurs en mémoire
+- `ConsoleUI` pour l'affichage des messages d'entrée ou d'erreur
+- `ValidateInput` pour contrôler les entrées utilisateur
+- `Calculatrice` pour orchestrer l'ensemble
+
+Cette séparation permet d’avoir un code plus facile à lire et à maintenir, d’écrire plus facilement des tests unitaires et d’ajouter de nouvelles fonctionnalités sans modifier toute la structure.
+
+### Pourquoi ne pas utiliser eval() ou des modules externes
+
+Même si Python permet d’évaluer une expression avec `eval()`, j'ai préféré implémenter moi-même la logique de calcul.
+
+L’objectif était de tester ma compréhension du traitement des opérations en gérant manuellement la priorité des opérateurs et en manipulant les structures de données.Je voulais renforcer ma compréhension des algorithmes plutôt que d’utiliser une solution déjà intégrée.
+
+
+---
 
 ##    Fonctionnalités principales
 - Évaluation d'expressions complètes
