@@ -8,6 +8,14 @@ L’objectif principal était de renforcer ma compréhension de l’utilisation 
 
 ---
 ## Objectifs pédagogiques
+Cet exercice m’a permis de travailler plusieurs compétences: :
+- Solidier ma compréhension de la programmation orientée objet
+- Structurer un projet Python de manière professionnelle
+- Développer de façon modulaire et testable
+- Gérer l’ordre des opérations sans utiliser `eval()` a l'aide d'un algorithme 
+- Écrire des tests unitaires
+- Manipuler des structures de données pour interpréter des expressions
+Ces objectifs ont guidé mes choix techniques et la structure du projet.
 
 
 ---
@@ -18,11 +26,11 @@ L’objectif principal était de renforcer ma compréhension de l’utilisation 
 J’ai choisi de séparer les classes en fonction de leurs responsabilités afin de respecter le principe de responsabilité unique (Single Responsibility Principle).
 
 Chaque composant a un rôle précis :
-- `Operations` pour la logique mathématique
-- `Memoires` pour stocker et gérer les valeurs en mémoire
-- `ConsoleUI` pour l'affichage des messages d'entrée ou d'erreur
-- `ValidateInput` pour contrôler les entrées utilisateur
-- `Calculatrice` pour orchestrer l'ensemble
+- `Operations` Gère les operations et applique l'ordre des opérations
+- `Memoires` Gère l'acces aux mémoires de la calculatrice
+- `ConsoleUI` Gère l'affichage des messages d'entrée ou d'erreur
+- `ValidateInput` Contrôle les entrées utilisateur
+- `Calculatrice` Orchestre l'ensemble dans l'ordre établit
 
 Cette séparation permet d’avoir un code plus facile à lire et à maintenir, d’écrire plus facilement des tests unitaires et d’ajouter de nouvelles fonctionnalités sans modifier toute la structure.
 
