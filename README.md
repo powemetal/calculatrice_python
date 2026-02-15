@@ -1,5 +1,5 @@
 # Calculatrice Python
-![Python](https://img.shields.io/badge/Python-3.14-blue)![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-informational)
+![Python](https://img.shields.io/badge/Python-3.12-blue)![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-informational)
 
 ##    Description
 Une simple calculatrice Python créée comme exercice de pratique et de révision pour l'examen de fin de session du cours Concepts de programmation 1 de l’AEC Développement de logiciels du Collège de Maisonneuve.  
@@ -121,4 +121,5 @@ MIT
 **Francis Boisvert**  
 Étudiant en développement logiciel  
 Collège de Maisonneuve
+
 
