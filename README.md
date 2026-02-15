@@ -1,41 +1,47 @@
-# Calculatrice python
+# Calculatrice Python
 ![Python](https://img.shields.io/badge/Python-3.14-blue)![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-informational)
 
 ##    Description
-Une simple calculatrice python créée comme exercice de pratique et de révision pour l'examen de fin de session du cours "Concepts de programmation 1" de l'AEC "Développement de logiciels" du collège de Maisonneuve. L'objectif principal était de renforcer ma compréhesion de l'utilisation des classes dans le cadre d'un projet modulaire, extensible et maintenable. Ce projet vise également à demontrer une architecture prope, une separation claire des responsabilités et une couverture des tests unitaires, le tout, en partant de zéro.
+Une simple calculatrice Python créée comme exercice de pratique et de révision pour l'examen de fin de session du cours Concepts de programmation 1 de l’AEC Développement de logiciels du Collège de Maisonneuve.  
 
+L’objectif principal était de renforcer ma compréhension de l’utilisation des classes dans un projet modulaire, extensible et maintenable. Ce projet vise également à démontrer une architecture propre, une séparation claire des responsabilités et une couverture complète des tests unitaires — le tout en partant de zéro.
 
 ---
 
+
 ##    Fonctionnalités principales
-- Evaluation d'expressions complètes
+- Évaluation d'expressions complètes
 - Gestion de mémoires (M1 - M5)
 - Validation robuste des entrées
 - Tests unitaires
-- Prise en charge de l'ordre des operations
+- Prise en charge de l'ordre des opérations
 
-Exemple :
+Exemples :
 - Calculs en chaîne (+, -, *, /)
 - Gestion de mémoires M1–M5
 - Validation robuste des entrées
 - Tests unitaires complets
 
-
 ---
 
 ##    Architecture du projet
-src/
-  calculatrice/
-    app.py
-    operations.py
-    memoires.py
-    console_ui.py
-    validate_input.py
-tests/
-  test_app.py
-  test_memoires.py
-  tests_operations.py
 
+```
+src/
+└── calculatrice/
+    ├── app.py
+    ├── operations.py
+    ├── memoires.py
+    ├── console_ui.py
+    └── validate_input.py
+
+tests/
+├── test_app.py
+├── test_memoires.py
+└── test_operations.py
+
+
+```
 
 ##  Principes d’architecture
 Séparation UI / logique métier
@@ -44,18 +50,21 @@ Code modulaire, extensible et testable
 
 
 ## Installation et exécution
-1. Cloner le projet
-git clone <URL de ton dépôt>
-cd <nom_du_dossier>
-git clone <URL de ton dépôt>
-cd <nom_du_dossier>
+1. Cloner le projet.
+```bash
+git clone https://github.com/powemetal/calculatrice_python/
+cd calculatrice_python
+```
 
-
-## Lancer l’application
+2. Lancer l’application.
+```bash
 python -m src.calculatrice.main
+```
 
-## Lancer les test
+3. Lancer les tests.
+```bash
 python -m unittest discover tests
+```
 
 ## Ce que j’ai appris
 - Organiser un projet Python de manière professionnelle
@@ -63,16 +72,16 @@ python -m unittest discover tests
 - Séparer les responsabilités dans une architecture modulaire
 - Gérer les erreurs proprement
 
-## Améliorations possible
+## Améliorations possibles
 - Prise en charge des parenthèses
-- Prise en charge d'autres opérations (exposants, modulo, racine)
+- Ajout d’opérations avancées (exposants, modulo, racine)
 - Ajouter un historique des calculs
 
 
 ## Licence
-
+MIT
 
 ## Auteur
-Francis Boisvert  
+**Francis Boisvert**  
 Étudiant en développement logiciel  
 Collège de Maisonneuve
