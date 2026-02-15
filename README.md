@@ -17,10 +17,10 @@ L’objectif principal était de renforcer ma compréhension de l’utilisation 
 - Prise en charge de l'ordre des opérations
 
 Exemples :
-- Calculs en chaîne (+, -, *, /)
-- Gestion de mémoires M1–M5
-- Validation robuste des entrées
-- Tests unitaires complets
+- Calculs en chaîne et prise en charge de l'ordre des opérations: 5 + 8 * 4 - 32 = 5
+- Les mémoires peuvent être utilisées directement en écrivant M1-M5 au lieu d'un terme dans les équations
+- Les entrées sont vérifiées autant a l'entrée utilisateur que lors de l'ajout dans les operations
+
 
 ---
 
