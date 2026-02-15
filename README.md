@@ -4,7 +4,7 @@
 ##    Description
 Une simple calculatrice Python créée comme exercice de pratique et de révision pour l'examen de fin de session du cours Concepts de programmation 1 de l’AEC Développement de logiciels du Collège de Maisonneuve.  
 
-L’objectif principal était de renforcer ma compréhension de l’utilisation des classes dans un projet modulaire, extensible et maintenable. Ce projet vise également à démontrer une architecture propre, une séparation claire des responsabilités et une couverture complète des tests unitaires — le tout en partant de zéro.
+L’objectif principal était de renforcer ma compréhension de l’utilisation des classes dans un projet modulaire, extensible et maintenable.  Ce projet vise également à démontrer une architecture propre, une séparation claire des responsabilités et une couverture complète des tests unitaires — le tout en partant de zéro.
 
 ---
 ## Objectifs pédagogiques
@@ -110,6 +110,8 @@ python -m unittest discover tests
 - Prise en charge des parenthèses
 - Ajout d’opérations avancées (exposants, modulo, racine)
 - Ajouter un historique des calculs
+- Utiliser des @staticmethod dans validate_input
+- Faire une classe ErrorManager pour centraliser la gestion des erreurs
 
 
 ## Licence
@@ -119,3 +121,4 @@ MIT
 **Francis Boisvert**  
 Étudiant en développement logiciel  
 Collège de Maisonneuve
+
