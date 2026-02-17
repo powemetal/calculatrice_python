@@ -15,6 +15,15 @@ class Calculatrice:
 
     #boucle while de la calculatrice
     def main_menu(self):
+        """
+        Menu principal de la calculatrice qui affiche les options disponibles et gère les choix de l'utilisateur pour effectuer des calculs, gérer les mémoires ou quitter l'application.
+            L'utilisateur peut choisir entre 4 options:
+            1. Effectuer un calcul
+            2. Gérer les mémoires
+            3. Afficher l'historique des calculs (en cours de développement)
+            4. Quitter l'application
+            La fonction boucle jusqu'à ce que l'utilisateur choisisse de quitter l'application.        
+        """
         while True:
             self.console.afficher_menu(self.resultat, self.memoires)
             match self.validate_input.input_menu():
@@ -33,9 +42,11 @@ class Calculatrice:
 
     def calculer(self):
         """
-        Docstring for calculer
+        Effectue un calcul en respectant l'ordre des opérations et en gérant les erreurs telles que la division par zéro ou les entrées invalides.
         
-        :param self: Description
+        La fonction boucle jusqu'à ce que l'utilisateur entre un opérateur "=" pour indiquer la fin du calcul, puis affiche le résultat final. 
+        Pendant le processus de calcul, les entrées de l'utilisateur sont validées pour s'assurer qu'elles sont des nombres valides et que les 
+        opérateurs sont parmi les options supportées (+, -, *, /). En cas d'erreur, un message approprié est affiché et le calcul est interrompu.
         """
         while True:
             calcul_en_cours = Operations() 
@@ -70,9 +81,13 @@ class Calculatrice:
 
     def gestion_de_la_memoire_menu(self):
         """
-        Docstring for gestion_de_la_memoire
-        
-        :param self: Description
+        Menu de gestion de la mémoire qui permet à l'utilisateur de sauvegarder le résultat d'un calcul dans une mémoire spécifique, d'effacer une mémoire ou d'effacer toutes les mémoires.
+            L'utilisateur peut choisir entre 4 options:
+            1. Sauvegarder le résultat dans une mémoire (M1 à M5)
+            2. Effacer une mémoire spécifique (M1 à M5)
+            3. Effacer toutes les mémoires
+            4. Retourner au menu principal
+            La fonction boucle jusqu'à ce que l'utilisateur choisisse de retourner au menu principal.
         """
         while True:
             self.console.afficher_menu_gestion_memoire(self.resultat, self.memoires)

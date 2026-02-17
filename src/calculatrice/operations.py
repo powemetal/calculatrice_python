@@ -4,16 +4,33 @@ class Operations():
         self.termes = []
 
     def ajouter_terme(self, terme):
+        """
+        Revalidation du terme et ajout du terme a la liste des termes pour le calcul
+        
+        :param self: Description
+        :param terme: Description
+        """
         if not isinstance(terme, (int, float)):
             raise ValueError("Le terme doit être un nombre entier ou à virgule flottante.")
         self.termes.append(terme)
 
     def ajouter_operation(self, operateur):
+        """
+        Validation de l'operateur et ajout de l'operateur a la liste des operateurs pour le calcul
+        
+        :param self: Description
+        :param operateur: Description
+        """
         if operateur not in ["+", "-", "*", "/"]:
             raise ValueError("L'opérateur doit être l'un des suivants: +, -, *, /.")
         self.operateurs.append(operateur)
 
     def total(self):
+        """
+        Effectue le calcul en respectant l'ordre des operations et en vérifiant qu'il n'y a pas de division par zéro
+        
+        :param self: Description
+        """
         calculs = []
         for nombre, operation in zip(self.termes, self.operateurs):
             calculs.append(nombre)
