@@ -1,10 +1,10 @@
 # Calculatrice Python
-![Python](https://img.shields.io/badge/Python-3.14-blue)![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-informational)
+![Python](https://img.shields.io/badge/Python-3.12-blue)![Code Style](https://img.shields.io/badge/Code%20Style-PEP8-informational)
 
 ##    Description
 Une simple calculatrice Python créée comme exercice de pratique et de révision pour l'examen de fin de session du cours Concepts de programmation 1 de l’AEC Développement de logiciels du Collège de Maisonneuve.  
 
-L’objectif principal était de renforcer ma compréhension de l’utilisation des classes dans un projet modulaire, extensible et maintenable. Ce projet vise également à démontrer une architecture propre, une séparation claire des responsabilités et une couverture complète des tests unitaires — le tout en partant de zéro.
+L’objectif principal était de renforcer ma compréhension de l’utilisation des classes dans un projet modulaire, extensible et maintenable.  Ce projet vise également à démontrer une architecture propre, une séparation claire des responsabilités et une couverture complète des tests unitaires — le tout en partant de zéro.
 
 ---
 ## Objectifs pédagogiques
@@ -14,7 +14,8 @@ Cet exercice m’a permis de travailler plusieurs compétences: :
 - Développer de façon modulaire et testable
 - Gérer l’ordre des opérations sans utiliser `eval()` a l'aide d'un algorithme 
 - Écrire des tests unitaires
-- Manipuler des structures de données pour interpréter des expressions
+- Manipuler des structures de données pour interpréter des expressions  
+
 Ces objectifs ont guidé mes choix techniques et la structure du projet.
 
 
@@ -77,11 +78,6 @@ tests/
 
 ```
 
-##  Principes d’architecture
-Séparation UI / logique métier
-Validation défensive
-Code modulaire, extensible et testable
-
 
 ## Installation et exécution
 1. Cloner le projet.
@@ -110,6 +106,8 @@ python -m unittest discover tests
 - Prise en charge des parenthèses
 - Ajout d’opérations avancées (exposants, modulo, racine)
 - Ajouter un historique des calculs
+- Utiliser des @staticmethod dans validate_input
+- Faire une classe ErrorManager pour centraliser la gestion des erreurs
 
 
 ## Licence
@@ -119,3 +117,6 @@ MIT
 **Francis Boisvert**  
 Étudiant en développement logiciel  
 Collège de Maisonneuve
+
+
+
