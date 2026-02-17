@@ -14,7 +14,8 @@ Cet exercice m’a permis de travailler plusieurs compétences: :
 - Développer de façon modulaire et testable
 - Gérer l’ordre des opérations sans utiliser `eval()` a l'aide d'un algorithme 
 - Écrire des tests unitaires
-- Manipuler des structures de données pour interpréter des expressions
+- Manipuler des structures de données pour interpréter des expressions  
+
 Ces objectifs ont guidé mes choix techniques et la structure du projet.
 
 
@@ -77,11 +78,6 @@ tests/
 
 ```
 
-##  Principes d’architecture
-Séparation UI / logique métier
-Validation défensive
-Code modulaire, extensible et testable
-
 
 ## Installation et exécution
 1. Cloner le projet.
@@ -121,5 +117,6 @@ MIT
 **Francis Boisvert**  
 Étudiant en développement logiciel  
 Collège de Maisonneuve
+
 
 
